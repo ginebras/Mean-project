@@ -1,0 +1,14 @@
+<h1>CONTACTO </h1>
+
+<div #texto appResaltado >
+	<p> Esta es una pagina con Angular 12 creo</p>
+</div>
+
+<input type="number" [(ngModel)]="sliderWidth"><br>
+<button (click)="cargarSlider()">Cargar slider </button><br>
+<button (click)="resetearSlider()"> Resetear slider</button>
+
+<div *ngIf="anchuraToSlider">
+	<slider [anchura]="anchuraToSlider" (conseguirAutor)="getAutor($event)"></slider>
+	{{autor.nombre}}-{{autor.edad}}
+</div>

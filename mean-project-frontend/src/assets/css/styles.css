@@ -1,0 +1,152 @@
+/* IMPORTS DE FUENTES */
+
+@font-face{
+	font-family: "Cookies";
+	src: url("fuentes/Chocolate Cookies.ttf");
+}
+
+@font-face{
+	font-family: "Angel";
+	src: url("fuentes/Angel Wish.ttf");
+}
+
+@font-face{
+	font-family: "Cheerful";
+	src: url("fuentes/Cheerful Dynamite Free.ttf");
+}
+
+@font-face{
+	font-family: "Rollegirl";
+	src: url("fuentes/ROLLERGI.TTF");
+}
+
+body{
+	background:url("../img/patronaza.jpg");
+	font-size: 17px;
+	font-family: 'Helvetica';
+	background-attachment: fixed;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.clearfix{
+	float: none;
+	clear: none;
+}
+
+/*CABECERA */
+
+header{
+	font-family: Arial;
+	display: block;
+	width: 100%;
+	height: 90px;
+	background: rgba(11,119,151,0.8);
+	position: fixed;
+	text-transform: uppercase;
+}
+
+header ul{
+	display: block;
+	width: 56%;
+	height: ihnerit;
+	margin: 0px auto;
+}
+
+header ul li{
+	margin: 0px auto;
+	line-height: 90px;
+	text-align: center;
+	display: inline-block;
+}
+
+header a{
+	padding-right: 20px;
+	padding-left: 20px;
+	display: block;
+	color: white;
+	transition: all 300ms;
+	height: ihnerit;
+	text-decoration: none;
+}
+
+header a:hover,
+.activated{
+	background: rgba(0, 0, 0, 0.6);
+}
+
+/*CONTENIDO */
+
+#contenido{
+	width: 75%;
+	box-shadow: 0px 0px 40px black;
+	min-height: 1500px;
+	padding-top: 120px;
+	margin: 0px auto;
+	border-left: 1px solid #b7b7b7;
+	border-right: 1px solid #b7b7b7;
+	background: rgba(255,255,255,0.8);
+}
+
+/*FOOTER */
+
+footer{
+	width: 90%;
+	height: 30%;
+	margin: 0px auto;
+	color: rgba(0, 0, 0, 0.5);
+	padding-top: 15px;
+}
+
+/*SOBRE MI */
+
+#title{
+	margin: 0px auto;
+	width: 700px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+#title h1{
+	font-size: 70px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+	font-family: "Cookies";
+}
+
+#title h2{
+	font-size: 20px;	
+	font-family: "Cheerful";
+	color: rgba(0, 0, 0, 0.7);
+	padding-bottom: 5px;
+}
+
+article h2 {
+	margin: 0px auto;
+	font-size: 50px;
+	font-family: Arial;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+
+article {
+	padding-top: 10px;
+	margin: 0px auto;
+	width: 600px;
+	font-family: "Helvetica";
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+article p{
+	padding-top: 10px;
+}
+
+.proshecto{
+	list-style: none;
+	display:block;
+	float: left;
+}

@@ -1,0 +1,12 @@
+<div id="todo">
+	<img src="{{url+'getImage/'+project.image}}" width=200 height=200>
+	<div id=datos>
+		<h1> {{project.name}} </h1>
+		<p>AUTOR: {{project.autor}}</p>
+		<p>AÑO: {{project.year}}</p>
+		<p>CATEGORIA: {{project.category}}</p>
+		<p>LENGUAJES: {{project.langs}}</p>
+	</div>
+	<a [routerLink]="['/editar',project._id]" [ngStyle]="{'color':'purple','cursor':'pointer','text-decoration':'underline'}"> EDITAR </a><br>
+	<a (click)="deleteProject(project._id)" [ngStyle]="{'color':'purple','cursor':'pointer','text-decoration':'underline'}">BORRAR </a>
+</div>

@@ -1,0 +1,18 @@
+<header>
+	<ul>
+		<li><a [routerLink]="['/sobremi']" [routerLinkActive]="['activated']"> SOBRE MI</a></li>
+		<li><a [routerLink]="['/proyectos']" [routerLinkActive]="['activated']">PROYECTOS</a></li>
+		<li id="logo" [ngStyle]="{'color':'purple'}">AF</li>
+		<li><a [routerLink]="['/crear-proyectos']" [routerLinkActive]="['activated']"> CREAR PROYECTOS</a></li>
+		<li><a [routerLink]="['/contacto']" [routerLinkActive]="['activated']">CONTACTO</a></li>
+	</ul>
+</header>
+
+
+<section id="contenido">
+	<router-outlet></router-outlet>
+</section>
+
+<footer>
+	Master en javaScript de VictorRobles &copy;
+</footer>
